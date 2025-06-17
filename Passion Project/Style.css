@@ -1,0 +1,112 @@
+html {
+    font-family: Ms Gothic;
+    color:black;
+}
+
+#page1 {
+    background-image:url(assets/home.gif);
+    
+}
+
+#page2 {
+    background-image:url(assets/ghost.png);
+}
+
+#page3 {
+    background-image:url(assets/yugi.gif);
+    background-size: 93%
+}
+
+#page4 {
+    background-image:url(assets/gruul.jpg);
+    background-size: 100%
+}
+
+body {
+    margin: 0;
+}
+
+#Container {
+    Border-width: 4px;
+    border-style: solid;
+    border-color: white;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    background-image: url(assets/oak.png);
+    background-position: center 60px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 435px;
+    border: black 4px double;
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    padding: 3px;  
+}
+
+#info1 {
+    color: aliceblue;
+    Border-width: 4px;
+    border-style: double;
+    border-color: azure;
+    height: 900px;
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#info2 {
+    color: aliceblue;
+    Border-width: 4px;
+    border-style: double;
+    border-color: azure;
+    height: 900px;
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+#info3 {
+    color: aliceblue;
+    Border-width: 4px;
+    border-style: double;
+    border-color: azure;
+    height: 900px;
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+#mew {
+    position: absolute;
+    left: 400px;
+    bottom: 70px;
+}
+
+#yugioh {
+    position: absolute;
+    bottom: 70px;
+    left: 825px;
+}
+
+#magic {
+    position:absolute;
+    bottom: 70px;
+    right: 400px;
+}
