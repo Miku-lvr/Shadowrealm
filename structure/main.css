@@ -1,0 +1,390 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: Ms Gothic;
+    color:whitesmoke;
+    background-image: url(assets/background.gif);
+    background-size: 100%;
+}
+
+body{
+    margin:0;
+}
+
+#container {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    padding: 15px;
+    background-image:url(assets/start.gif);
+    background-size: 100%;
+    
+}
+
+.bottom {
+    position: absolute;
+    border:black 0px solid;
+    background-color:black;
+    height:170px;
+    top:420px;
+    width:590px;
+    margin:auto;
+}
+
+#forest-link {
+    height: 50%;
+    width: 50%;
+    top:150px;
+    right:150px;
+    margin:auto;
+    position: absolute;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#right-link {
+    height:70%;
+    width:30%;
+    right:0px;
+    position:absolute;
+    text-decoration:none;
+    z-index:10;
+}
+
+#left-link {
+    height:70%;
+    width:30%;
+    left:0px;
+    position:absolute;
+    text-decoration:none;
+    z-index:10;
+}
+
+#shed-link {
+    height:35%;
+    width:50%;
+    left:0px;
+    top:200px;
+    position:absolute;
+    text-decoration:none;
+    z-index:10; 
+}
+
+#death {
+    height:100%;
+    width:100%;
+    position:absolute;
+    text-decoration:none;
+    z-index:10;
+}
+
+
+#Container1 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/run.png);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+#Container1 p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width:0 }
+    to { width: 100% }
+}
+
+#Container2 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/path.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+#Container2 p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width:0 }
+    to { width: 100% }
+}
+
+#Container3 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/paths.gif);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+#Container3 p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+#Container4 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/firstdeath.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:#764462
+}
+
+#Container4 p,h3 {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width:0 }
+    to { width: 100% }
+}
+
+#Container5 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/seconddeath.png);
+    background-size: 81%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:black
+}
+
+#Container5 p,h3 {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+#Container6 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/cabinaway.gif);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:black
+}
+
+#Container6 p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+#Container7 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/cabin.gif);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:black
+}
+
+#Container7 p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+
+#Container8 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/night.gif);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:black
+}
+
+#Container8 p,h3 {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+#Container9 {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/thirddeath.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-color:black
+}
+
+#Container9 p,h3 {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
+
+#ContainerLast {
+    border: white 4px double;
+    height: 600px;
+    width: 600px;
+    bottom: 200px;
+    right: 650px;
+    position:absolute;
+    margin:auto;
+    margin-top: 15px;
+    background-image:url(assets/moto.gif);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-color:black
+}
+
+#ContainerLast p {
+    text-align: center;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin:auto;
+    margin-top: 14px;
+    padding: 5px;
+    letter-spacing: .15em;
+    animation: 
+        typing 5s steps(93), blink 0.75s step-end infinite;
+}
