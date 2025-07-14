@@ -1,0 +1,134 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: Ms Gothic;
+    color:whitesmoke;
+    background-image: url(images/space.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+body{
+    margin: 0;
+}
+
+:root {
+    --width: 100px;
+    --x-speed: 13s;
+    --y-speed: 7s;
+    --transition-speed: 2.2s;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: Ms Gothic;
+    color:whitesmoke;
+    background-image: url(images/space.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+body{
+    margin: 0;
+}
+
+img, div {
+    width: 100px;
+    height: 100px;
+}
+
+.space {
+    animation: x 13s linear infinite alternate;
+}
+
+#glorb {
+    animation: y 7s linear infinite alternate;
+}
+
+#meteor {
+  position: absolute;
+  top: 784px;
+  left: 0;
+  width: 140px;
+  height: 140px;
+  background-image: url('images/meteor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation: fly-across 40s linear infinite;
+}
+
+#meteor2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background-image: url('images/meteor3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation: fly-across 50s linear infinite;
+}
+
+
+@keyframes fly-across {
+  0% {
+    transform: translateX(-2000px);
+  }
+  30% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+#glorb2 {
+  position: absolute;
+  top: 246px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('images/glorp3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation: fly-across 28s linear infinite;
+}
+
+#glorb3 {
+  position: absolute;
+  top: 624px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('images/glorp4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation: fly-across 19s linear infinite;
+}
+
+
+@keyframes x {
+    100% {
+        transform: translateX( calc(100vw -
+        100%) );
+    }
+}
+
+
+@keyframes y {
+    100% {
+        transform: translateY( calc(100vw -
+        103vh) );
+    }
+}

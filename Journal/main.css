@@ -1,0 +1,14 @@
+* {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: Ms Gothic;
+    color:whitesmoke;
+    background-image: url(assets/);
+    background-size: 100%;
+}
+
+body{
+    margin:0;
+}
