@@ -1,4 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 body {
-    background-color: rgb(95, 75, 221);
-    color: aliceblue;
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.6;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  border-radius: 40px;
+  position: relative;
+  z-index: 0;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 0, 0.06) 3px
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 55%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.pipboy-container {
+  background-color: rgba(0, 255, 0, 0.05);
+  border: 2px solid #00ff00;
+  padding: 60px;
+  border-radius: 40px;
+  width: 95%;
+  max-width: 1200px;
+  height: auto;
+  z-index: 3;
+  box-shadow: 0 0 30px #00ff00;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 40px;
+  z-index: 3;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  z-index: 3;
+}
+
+li {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+a {
+  color: #00ff00;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid #00ff00;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  text-shadow: 0 0 5px #00ff00;
+  z-index: 3;
+}
+
+a:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.85;
+  }
+}
+body {
+  animation: flicker 3s infinite;
 }

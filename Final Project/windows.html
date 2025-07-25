@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploring the Deep</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="desktop">
+    <!-- Desktop Icons -->
+    <div class="desktop-icons">
+      <div class="icon" onclick="openApp('notepad')">
+        <img src="icons/notepad.png" alt="Notepad">
+        <p>Notepad</p>
+      </div>
+      <div class="icon" onclick="openApp('browser')">
+        <img src="icons/browser.png" alt="Browser">
+        <p>Browser</p>
+      </div>
+      <div class="icon">
+        <img src="icons/folder.png" alt="Folder">
+        <p>Folder</p>
+      </div>
+      <div class="icon">
+        <img src="icons/music.png" alt="Music">
+        <p>Music</p>
+      </div>
+      <div class="icon">
+        <img src="icons/settings.png" alt="Settings">
+        <p>Settings</p>
+      </div>
+      
+    </div>
+
+    <!-- Info Pop-up Window -->
+    <div id="infoPopup" class="xp-window">
+      <div class="xp-title-bar" onmousedown="dragWindow(event, this.parentElement)">
+        <span class="xp-title">Windows</span>
+        <button class="xp-close-btn" onclick="closeWindow('infoPopup')">×</button>
+      </div>
+      <div class="xp-body">
+        <div class="xp-content">
+          <img src="icons/warning.png" class="xp-icon" alt="!">
+          <div>
+            <p>This project is an exploration game where you explore a deep web site, uncovering mysterious disappearances..</p>
+            <label><input type="checkbox"> Don't show this message again</label>
+          </div>
+        </div>
+        <div class="xp-footer">
+          <button class="xp-ok-btn" onclick="closeWindow('infoPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notepad Window -->
+    <div id="notepad" class="xp-window notepad-position hidden draggable">
+      <div class="xp-title-bar" onmousedown="dragWindow(event, this.parentElement)">
+        <span class="xp-title">Notepad</span>
+        <button class="xp-close-btn" onclick="closeWindow('notepad')">×</button>
+      </div>
+      <div class="xp-body">
+        <p><strong>Objectives:</strong></p>
+        <ul>
+      <li>Explore websites.</li>
+      <li>Find ties to disappearances.</li>
+      <li>Do not leave any pixel untouched.</li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Browser Window -->
+  <div id="browser" class="xp-window browser-window hidden draggable">
+    <div class="xp-title-bar" onmousedown="dragWindow(event, this.parentElement)">
+      <span class="xp-title">Internet Explorer</span>
+      <button class="xp-close-btn" onclick="closeWindow('browser')">×</button>
+    </div>
+    <div class="xp-body browser-body">
+      <div class="browser-toolbar">
+        <button onclick="goBack()" class="nav-btn">⬅ Back</button>
+        <input type="text" id="fakeAddressBar" readonly>
+      </div>
+      <div id="siteContent"></div>
+    </div>
+  </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+  <button class="start-btn">
+    <img src="icons/windows.png" alt="Start" class="start-icon">
+    Start
+  </button>
+  <span id="clock"></span>
+  </div>
+  </div>
+
+  <!-- Infection Overlay -->
+  <div id="infectionOverlay" class="infection-overlay hidden">
+    <img src="images/locust.gif" id="infectionImage" alt="LEt me oUt"/>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>
